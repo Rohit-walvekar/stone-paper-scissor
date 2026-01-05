@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors Game | JavaScript Mini Project</title>
+    <meta
+      name="title"
+      content="Rock Paper Scissors Game | JavaScript Mini Project"
+    />
+    <meta
+      name="description"
+      content="A modern and interactive Rock Paper Scissors game built using HTML, CSS, and JavaScript with a premium UI and smooth gameplay."
+    />
+    <meta
+      name="keywords"
+      content="Rock Paper Scissors Game, Stone Paper Scissors, JavaScript Game, HTML CSS JS Project, Frontend Mini Project, Web Game"
+    />
+    <meta name="author" content="Rohit Walvekar" />
+    <meta name="robots" content="index, follow" />
+
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Rock Paper Scissors Game | JavaScript Mini Project"
+    />
+    <meta
+      property="og:description"
+      content="Play a modern Rock Paper Scissors game built using HTML, CSS, and JavaScript with a premium UI design."
+    />
+    <meta property="og:image" content="https://your-site-link/preview.png" />
+    <meta property="og:url" content="https://your-site-link/" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Rock Paper Scissors Game | JavaScript Mini Project"
+    />
+    <meta
+      name="twitter:description"
+      content="A modern Rock Paper Scissors game built using HTML, CSS, and JavaScript."
+    />
+    <meta name="twitter:image" content="https://your-site-link/preview.png" />
+
+    <meta name="theme-color" content="#1e3c72" />
+
+      <meta name="application-name" content="Rock Paper Scissors JS Game" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="app">
+      <h1>Rock Paper Scissors</h1>
+
+      <div class="game-card">
+        <div class="choices">
+          <div class="choice" id="rock">
+            <img src="images/rock.png" alt="Rock" />
+          </div>
+          <div class="choice" id="paper">
+            <img src="images/paper.png" alt="Paper" />
+          </div>
+          <div class="choice" id="scissors">
+            <img src="images/scissors.png" alt="Scissors" />
+          </div>
+        </div>
+
+        <div class="computer-choice">
+          <p id="comp-label" class="hide">Computer Chose</p>
+          <div class="choice computer hide" id="computer-box">
+            <img id="computer-img" alt="Computer Choice" />
+          </div>
+        </div>
+
+        <div class="scoreBoard">
+          <div class="score">
+            <p id="user-score">0</p>
+            <span>You</span>
+          </div>
+          <div class="score">
+            <p id="comp-score">0</p>
+            <span>Computer</span>
+          </div>
+        </div>
+
+        <div class="msg-container">
+          <p id="messege">Play Your Move</p>
+        </div>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #2563eb, #020617);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.app {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.game-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+  border-radius: 25px;
+  padding: 30px;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.5);
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+
+.choice {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: radial-gradient(circle at top, #020617, #000);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.5s ease;
+}
+
+.choice:hover {
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 0 30px rgba(255, 221, 87, 0.5);
+}
+
+.choice:active {
+  transform: scale(0.97);
+  transition-duration: 0.15s;
+}
+
+.hide {
+  display: none;
+}
+
+.choice img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.6));
+}
+
+.computer-choice {
+  margin-bottom: 25px;
+}
+
+.computer-choice p {
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.choice.computer {
+  margin: 0 auto;
+  box-shadow: 0 0 30px rgba(96, 165, 250, 0.6);
+}
+
+.scoreBoard {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-bottom: 25px;
+}
+
+.score p {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #ffdd57;
+}
+
+.score span {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.msg-container {
+  margin-top: 10px;
+}
+
+#messege {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #ffdd57, #fbbf24);
+  color: #000;
+  font-weight: 600;
+  box-shadow: 0 10px 30px rgba(255, 221, 87, 0.4);
+}
+
+@media (max-width: 480px) {
+  .choices {
+    gap: 15px;
+  }
+
+  .choice {
+    width: 90px;
+    height: 90px;
+  }
+
+  .choice img {
+    width: 50px;
+    height: 50px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
