@@ -28,4 +28,4 @@ This project demonstrates **JavaScript game logic, DOM manipulation, and respons
 
 ## Live Demo
 
- -https://6940c2fb4b14894164cae562--clockwebapplication.netlify.app/
+ -https://stonepaperscissor-mania.netlify.app
