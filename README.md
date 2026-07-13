@@ -1,4 +1,4 @@
-# Stone Paper Scissor Game
+# Stone Paper Scissor Game : Web Application
 
 ## Overview
 The **Stone Paper Scissor Game** is a simple interactive web game built using **HTML, CSS, and JavaScript**.  
